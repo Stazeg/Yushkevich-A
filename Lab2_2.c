@@ -38,7 +38,7 @@ int main()
 	float x, e, sT, sC;
 	int n;
 	scanf("%f %f", &x, &e);
-    change(&x);
+        change(&x);
 	sC = sin(x);
 	printf("%.25f\n", sC);
 	sT = sinT(x, e, sC, &n);
