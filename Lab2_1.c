@@ -101,7 +101,7 @@ int input(void)
 	}
 }
 
-int main()
+int main()  /*2.1.30*/
 {
 	info();
 	while (input() != 0);
