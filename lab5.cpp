@@ -47,7 +47,7 @@ public:
 	}
 	long GetLength()
 	{
-		std::cerr << "653501 :)\n";
+		//std::cerr << "653501 :)\n";
 		return length;
 	}
 	void SetValue(std::string s)
