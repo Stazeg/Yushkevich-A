@@ -1,4 +1,4 @@
-//#include "stdafx.h"
+#include "stdafx.h"
 #include <iostream>
 #include <algorithm>
 #include <cmath>
@@ -107,6 +107,8 @@ void init()
 {
 	long N, n, a;
 	cin >> N; 
+	list <Content> l(N);
+	list <Content>::iterator it = l.begin();
 	vector <Tree> v;
 	for (long i = 0; i < N; ++i)
 	{
@@ -116,7 +118,9 @@ void init()
 		{
 			cin >> a;
 			A.Add(a);
+			it->data.push_back(a);
 		}
+		++it;
 		v.push_back(A);
 	}
 	cout << "answer:\n";
@@ -135,6 +139,6 @@ int main()
 {
 	//openFile("input.txt");
 	init();
-    return 0;
+        return 0;
 }
 
